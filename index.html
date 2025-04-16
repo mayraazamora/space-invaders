@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invasores del Espacio</title>
-    <style>
-        canvas {
+ <head>
+  <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Invasores del Espacio</title>
+   <style>
+     canvas {
+       box-shadow: black 20px 10px 50px;
+     }
+    h1 {
+      margin: 0px;
+      margin-bottom: 10px;
+      font-size: 2 em;
+      font-family: "Helvetica";
+    }
+    body {
+      display: flex; 
+      align-items: center;
+      flex-direction: column;
+      padding: 0px;
+      margin: 0px;
+      height: 100vh;
+      background: linear-gradient(
+        0deg, 
+        rgb(97, 98, 99) 0%, 
+        rgba(0, 0, 0, 0) 100%
+        );        
+    }
+        #game {
+            width: 800px;
+            height: 600px;
+            background-color: black;
+            border-radius: 10px;
             box-shadow: black 20px 10px 50px;
+            
         }
-        h1 {
-            margin: 0px;
-            margin-bottom: 10px;
-            font-size: 2.9em;
-            font-family: "Helvetica";
-        }
-        body {
-            display: flex; 
-            flex-direction: column;
-            align-items: center;
-        }
-    </style>
+  </style>
 </head>
 <body>
-    <h1>Invasores del Espacio</h1>
-    <p>¡Bienvenido a Invasores del Espacio!</p>
-    <p>¡A la batalla!</p>
-    <canvas id="game"></canvas>
-    <script type="module" src="index.js"></script>
+  <h1>Invasores Espaciales</h1>
+  <canvas id="game"></canvas>
+  <script type="module" src="index.js"></script>
 </body>
 </html>
